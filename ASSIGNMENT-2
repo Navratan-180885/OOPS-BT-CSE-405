@@ -1,0 +1,34 @@
+// find the greater number between the 3 numbers.
+#include <iostream>
+using namespace std;
+class Bigger
+{
+int a,b,c;
+public:
+   void get_number()
+   {
+   	cout<<"Value of three number is :"<<endl;
+   	cin>>a>>b>>c;
+   }
+   void display()
+   {
+   	if(a>>b&&a>>c)
+   	 {
+	  cout<<"a is greater :"<<a<<endl;	 
+	 }
+	if(b>>c&&b>>a)
+	 {
+	  cout<<"b is greater :"<<b<<endl;
+	 }
+	 else
+	  cout<<"c is greater :"<<c<<endl;
+   }
+};
+int main()
+{
+Bigger a;
+a.get_number();
+a.display();
+return 0;
+}
+
