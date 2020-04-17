@@ -1,0 +1,31 @@
+//TO CHECK NUMBER IS EVEN OR ODD.
+#include <iostream>
+using namespace std;
+class number
+{
+ int num;
+ public: 
+ 
+ void get_data()
+    {
+	cout<<"enter the Number:";
+	cin>>num;
+	}
+ void check()
+{
+if(num%2==0)
+{
+cout<<"\nNumber is even:"<<num;	
+}
+else
+{
+cout<<"\nNumber is odd:"<<num;	
+}
+}	
+};
+int main(){
+number num;
+num.get_data();
+num.check();
+return 0;
+}
