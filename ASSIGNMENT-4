@@ -1,0 +1,29 @@
+//DISPLAY THE ELEMENT OF AN ARRAY.
+#include <iostream>
+using namespace std;
+class Matrix
+{
+int a[6],i;
+public:
+void input();
+void show();
+};
+void Matrix::input()
+{
+cout<<"enter the elements";
+for(i=0;i<6;i++)
+cin>>a[i];
+}
+void Matrix::show()
+{
+cout<<"display of matrix is"<<endl;
+for(i=0;i<6;i++)
+cout<<a[i]<<endl;	
+}
+int main()
+{
+Matrix obj;
+obj.input();
+obj.show();
+return 0;
+}
